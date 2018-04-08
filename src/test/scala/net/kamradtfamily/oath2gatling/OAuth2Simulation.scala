@@ -18,7 +18,7 @@ class OAuth2Simulation extends Simulation {
     .pause(5)
 
   setUp(
-    scn.inject(atOnceUsers(1))
+    scn.inject(atOnceUsers(100))
   ).protocols(httpConf)
 
 }
