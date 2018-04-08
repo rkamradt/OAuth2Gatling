@@ -12,6 +12,7 @@ pipeline {
             agent {
                 docker {
                     image 'hseeberger/scala-sbt:8u151-2.12.5-1.1.2'
+                    args '-v /var/lib/jenkins/workspace/.ivy2:/root/.ivy2'
                 }
             }
             steps {
